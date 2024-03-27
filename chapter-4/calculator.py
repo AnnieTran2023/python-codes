@@ -35,13 +35,14 @@ is_continue = True
 
 while is_continue == True:
     first_number = int(input("Enter first number: "))
-    operator = input ("Enter the operator: ")
+    print("+\n-\n*\n/")
+    operation = input ("Pick an operation: ")
     second_number = int(input("Enter second number: "))
 
     for key in math_operations:
-        if operator == key:
+        if operation == key:
             result = math_operations[key](first_number, second_number)
-            print(f"{first_number} {operator} {second_number} = {result}")
+            print(f"{first_number} {operation} {second_number} = {result}")
     
     ask = input("\nWould you to continue? 'yes' or 'no' ")
 
